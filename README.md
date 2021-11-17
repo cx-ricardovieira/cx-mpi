@@ -1,5 +1,6 @@
 # cx-mpi
 Checkmarx Massive Project Importer
+
 A tool, developed in python, to massive import projects into CxSAST from your SCM. The projects are created in CxSAST using the git connection and ultimately configure the projects to trigger scans automatically using CxSAST built-in scheduler.
 
 ## How to use it?
@@ -10,12 +11,19 @@ usage: main.py [-h] {github,gitlab,bitbucket,azuredevops} {get,create}
 configuration file (config.ini)
 ---
 CX_SAST_URL - CxSAST host
+
 CX_SAST_USERNAME - CxSAST username
+
 CX_SAST_PASSWORD - CxSAST password
+
 PRESET - CxSAST preset to be used in the project(s). Can be changed in the .csv file.
+
 TEAM - CxSAST team to be assined to the project(s). Can be changed in the .csv file. Team needs to exists before using the create operation
+
 GH_URL - github host
+
 GH_USERNAME - github username
+
 GH_TOKEN - github password
 
 #### python main.py github get
